@@ -1,0 +1,412 @@
+<section class="contact-page" [@fundido]>
+  <ul class="contacto">
+    <h1>Contacto</h1>            
+  </ul> 
+  <hr class="style-seven" />
+  <div class="container">     
+     <div class="row">
+        <div class="col-md-6">
+           <div class="contact-form">          
+              <h3>Siéntete Libre De Contactarte Con Nosotros</h3>
+              <ul class="cform">
+                 <li class="half pr-15">
+                    <input type="text" class="form-control" placeholder="Nombre Completo">
+                 </li>
+                 <li class="half pl-15">
+                    <input type="text" class="form-control" placeholder="Email">
+                 </li>
+                 <li class="half pr-15">
+                    <input type="text" class="form-control" placeholder="Contacto">
+                 </li>
+                 <li class="half pl-15">
+                    <input type="text" class="form-control" placeholder="Asunto">
+                 </li>
+                 <li class="full">
+                    <textarea class="textarea-control" placeholder="Mensaje"></textarea>
+                 </li>
+                 <li class="full">
+                  <a [routerLink]="['/inicio']" [routerLinkActive]="['active']">
+                    <input type="submit" value="Enviar" class="fsubmit">
+                  </a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        
+        <div class="col-md-6">
+           <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912911311!2d76.69348873658222!3d30.73506264436677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1546673926029" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+        </div>
+     </div>
+  </div>
+  <div class="container contact-info">
+     <div class="row">
+        <div class="col-md-12">
+           <h3>Información De Contacto</h3>
+        </div>
+        <!--Contact Info Start-->
+        <div class="col-md-4">
+           <div class="c-info">
+              <h6>Dirección:</h6>
+              <p> 4700 Milonia Dasvd # 143, Harenbns, FL 7867476, Chandigarh </p>
+           </div>
+        </div>
+        <!--Contact Info End--> 
+        <!--Contact Info Start-->
+        <div class="col-md-4">
+           <div class="c-info">
+              <h6>Contacto:</h6>
+              <p><strong>Phone:</strong> +1 748 8545 065-9</p>
+              <p><strong>Fax:</strong> +3 841 9638 638-7</p>
+           </div>
+        </div>
+        <!--Contact Info End--> 
+        <!--Contact Info Start-->
+        <div class="col-md-4">
+           <div class="c-info">
+              <h6>Para Más Información:</h6>
+              <p><strong>Email:</strong> info@gmail.com</p>
+              <p>contact@test.com.co</p>
+           </div>
+        </div>
+        <!--Contact Info End--> 
+     </div>
+  </div>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+
+<ul class="redes">
+  <a target="_blank" href="https://www.lamborghini.com/es-en/"><li>
+    <img src="https://develover.com.mx/recursos_codepen/global.png" alt="Sitio web">
+	</li></a>
+
+    <a target="_blank" href="https://es-la.facebook.com/"><li>
+	    <img src="https://develover.com.mx/recursos_codepen/facebook.png" alt="Facebook">
+    	</li></a>
+		
+    <a target="_blank" href="https://www.instagram.com/"><li>
+	    <img src="https://develover.com.mx/recursos_codepen/instagram.png" alt="Facebook">
+		</li></a>
+
+    <a target="_blank" href="https://www.linkedin.com/login/es/"><li>
+	    <img src="https://develover.com.mx/recursos_codepen/linkedin.png" alt="Linkedin">
+		</li></a>
+
+    <a target="_blank" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><li>
+        <img src="https://icones.pro/wp-content/uploads/2021/02/icone-twitter-jaune.png" alt="Twitter">
+		</li></a>
+	</ul>
+
+</section>
+
+<style>
+  .contacto{
+    text-align: center;
+    margin-top: -40px;    
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .google-map {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.google-map iframe {
+    width: 100%;
+    height: 485px;
+    border: 0px;
+}
+ul.cform {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+ul.cform li {
+    margin-bottom: 30px;
+}
+ul.cform li:last-child {
+    margin: 0px;
+}
+ul.cform li.half {
+    width: 50%;
+    float: left;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+ul.cform li.full {
+    width: 100%;
+    float: left;
+}
+ul.cform .form-control {
+    border: 2px solid #e1e1e1;
+    background: #fafafa;
+    color: #555555;
+    height: 53px;
+    line-height: 49px;
+    padding: 0 20px;
+}
+ul.cform textarea.textarea-control {
+    border: 2px solid #e1e1e1;
+    background: #fafafa;
+    color: #555555;
+    padding: 20px;
+    width: 100%;
+    height: 165px;
+    border-radius: 5px;
+}
+.cform .fsubmit {
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    color: rgba(235, 197, 6, 0.833);
+    background: #000000cc;
+    border: 0px;
+    height: 55px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cform .fsubmit:hover {
+    background: rgba(235, 197, 6, 0.795);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-form h3 {
+    text-align: center;
+    font-weight: 700;
+    margin: 0 0 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.c-info {
+    background: #ffffff;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    padding: 30px;
+}
+.c-info:hover {
+    box-shadow: 0 0 0 0.2rem rgba(247, 218, 1, 0.25);
+}
+.contact-map-info h6, .c-info h6 {
+    font-weight: 600;
+    color: #333333;
+    font-size: 20px;
+}
+.contact-map-info p, .c-info p {
+    margin: 0px;
+    color: #555555;
+    font-size: 16px;
+    line-height: 26px;
+}
+.contact-info {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-info h3 {
+    font-weight: 700;
+    margin: 0 0 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-form {
+    width: 100%;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+.mb60 {
+    margin-bottom: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact-map-info {
+    background: #fff;
+    border-radius: 5px;
+    width: 350px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    padding: 30px;
+}
+.contact-map-info ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.contact-map-info ul li {
+    margin-bottom: 30px;
+}
+.contact-map-info ul li:last-child {
+    margin: 0px;
+}
+.contact-page {
+    min-height: 100vh;
+    padding: 80px 0;
+    background: #9c999982;
+}
+
+</style>
+
+<style>
+    body{
+  font-family: 'Roboto', sans-serif;
+  background:#151515;
+  padding:20px 30px;
+} 
+.item {
+  box-sizing: border-box;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden;
+  background:white;
+    border: 1px solid #fbea01c2;
+  box-shadow: 0px 0px 2px #fbea01c2;
+    padding: 10px 20px 20px 20px;
+    margin: 10px auto;
+    font-family: sans-serif;
+    width:90%;
+}
+.item p{
+  font-family: 'Roboto', sans-serif;
+  font-size:12px;
+  width:100%;
+}
+.item label{
+  font-weight: bold;
+}
+.item div{
+  display: inline-block;
+}
+.item .texto{
+   width: 50%;
+   float: left;
+   position:relative;
+}
+.item .botones span{
+  width:calc(100% - 20px);
+  text-align:center;
+  font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+}
+.item .botones{
+    position: absolute;
+    width: 39%;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.item:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #151515;
+    width: 60%;
+    height: 100%;
+    z-index: 0;
+    transform: skew(-15deg) translateX(45px);
+  -webkit-transform: skew(-15deg) translateX(45px);
+}
+span.detalle_cita {
+  border: 2px solid #fbea01c2;
+  cursor: pointer;
+    display: inline-block;
+  margin-top:5px;
+  background: white;
+  color: #151515;
+  border-radius: 3px;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin-right: 10px;
+  font-weight:bold;
+  margin-bottom:5px;
+}
+span.remove_cita {
+   border: 2px solid #fbea01c2;
+      cursor: pointer;
+    display: inline-block;
+   margin-top:5px;
+  font-weight: bold;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: #fbea01c2;
+    color: #151515;
+}
+.buscador label{
+    color: #151515;
+    font-weight: bold;
+}
+.buscador{
+      box-sizing: border-box;
+     max-width: 400px;
+    border: 1px solid #fbea01c2;
+  box-shadow: 0px 0px 2px #fbea01c2;
+  margin:0 auto;
+  width:90%;
+  line-height:2;
+  padding: 10px 10px 20px 10px;
+ background: #fbea01c2;
+}
+#buscador{
+box-sizing: border-box;
+    width: 100%;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #151515;
+}
+
+.redes{
+    display: flex;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0;
+    margin-top: 83px;
+    flex-wrap: wrap;
+}
+ .redes li img{
+      top:50%;
+      transform:translate(-50%,-50%);
+      -webkit-transform:translate(-50%,-50%);
+      position:absolute;
+      height:20px;
+      left:50%;
+    }
+ .redes li:hover:not(.titulo){
+      transform:scale(1.1);
+      -webkit-transform:scale(1.1);      
+    }
+ .redes li.titulo{
+      width: 100%;
+      text-align: center;
+      height: auto;
+      background: none;
+      margin-bottom: 15px;
+      border-radius: 0;
+      color:white;
+    box-shadow: none;
+    }
+ .redes li{
+   box-shadow: 0px 0px 5px 0px #fbea01c2;
+    background: #1b1b1b;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 0 8px;
+    border-radius: 50%;
+     transition:all 600ms;
+      -webkit-transition:all 600ms;
+  }
+</style>                        
+

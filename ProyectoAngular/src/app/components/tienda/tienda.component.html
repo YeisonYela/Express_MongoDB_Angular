@@ -1,0 +1,158 @@
+<div class="container" [@fundido]>
+
+	<h1 class="heading">MUDETEC: AL DESCUBRIMIENTO DEL FUTURO</h1>
+	<h1 class="heading2">El Museo Lamborghini se renueva convirtiéndose en Museo de las Tecnologías, donde la fascinante historia de la Casa del Toro, los icónicos modelos y las visitas a las líneas de producción hablan de más de cincuenta años de innovación que proyectan a 
+		Lamborghini hacia el futuro.
+		El Mudetec ofrece una experiencia interactiva gracias, entre otras cosas, al nuevo simulador de conducción, que amplifica las emociones y el descubrimiento de los coches en exposición.
+		De las primeras creaciones visionarias del genio Ferruccio Lamborghini, como el Miura y el Countach, a los superdeportivos más recientes y exclusivos, como el prototipo híbrido Asterion, el few-off Centenario, el Huracán Performante y el Aventador SVJ.
+		Siente la emoción de la nueva realidad aumentada, descarga la app #lamborghinimudetec
+		Abierto todos los días desde las 9:30 hasta las 18:00</h1>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://espirituracer.com/archivos/2020/05/lamborghini-espada-400-gt-1.jpg" alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://c4.wallpaperflare.com/wallpaper/47/646/414/1975-lamborghini-countach-lp400-wallpaper-preview.jpg" alt="sunset behind San Francisco city skyline">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://www.abc.es/media/MM/2020/11/19/huracan-sto(2).jpg" alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://www.planetcarsz.com/assets/uploads/images/VEICULOS/L/LAMBORGHINI/2012_LAMBORGHINI_AVENTADOR_UNDERGROUND_RACING//LAMBORGHINI_AVENTADOR_UNDERGROUND_RACING_2012_1.jpg" alt="car interior from central back seat position showing driver and blurred view through windscreen of a busy road at night">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_674,q_auto:eco,w_1200/cms/uploads/yuBNp19RWGUKCCb92Dof" alt="back view of woman wearing a backpack and beanie waiting to cross the road on a busy street at night in New York City, USA">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://thumbs.dreamstime.com/b/lamborghini-countach-60780880.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://img.motoryracing.com/noticias/portada/17000/17293-n.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+		<div class="gallery-item">
+			<img class="gallery-image" src="https://salaguamotors.com/wp-content/uploads/2021/04/1966-Lamborghini-Miura.jpg" alt="man wearing a black jacket, white shirt, blue jeans, and brown boots, playing a white electric guitar while sitting on an amp">
+		</div>
+
+	</div>
+
+</div>
+
+<style>
+    /*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background-color: #fafafa;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading2 {
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: justify;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+	margin-top: -25px;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+
+</style>

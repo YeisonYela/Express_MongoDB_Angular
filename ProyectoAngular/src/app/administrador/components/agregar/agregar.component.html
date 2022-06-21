@@ -1,0 +1,47 @@
+<div class="col-lg-9" [@fadeLateral]>
+<h3>{{title}}</h3>
+  <br>
+<form #formAgregar="ngForm" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Nombre</label>
+      <input type="text" name="name" #name="ngModel" [(ngModel)]="carro.name" 
+      class="form-control" required/>  
+      <span *ngIf="!name.valid && name.touched">
+        El Nombre Es Obligatorio
+      </span>               
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Descripcion</label>
+      <input type="textarea" name="description" #description="ngModel" [(ngModel)]="carro.description" 
+      class="form-control" required/>  
+      <span *ngIf="!description.valid && description.touched">
+        La Descripcion Es Obligatorio
+      </span>      
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Año</label>
+        <input type="text" name="year" #year="ngModel" [(ngModel)]="carro.year" 
+        class="form-control" required/>  
+        <span *ngIf="!year.valid && year.touched">
+          La Año Es Obligatorio
+        </span>    
+    </div>
+
+    <br>
+
+    <div *ngIf=" carro.image">
+      <div class="image_for_edit">
+        <img src="{{url + 'get-image-carro/' + carro.image}}" />
+      </div>
+    </div>
+
+    <p>
+      <label>Subir La Imagen Del Carro</label><br>
+      <input type="file" placeholder="Subir imagen..." (change)="fileChangeEvent($event)"/>
+    </p>
+
+    <button type="submit" class="btn btn-outline-primary">{{title}}</button>
+  </form>
+</div>

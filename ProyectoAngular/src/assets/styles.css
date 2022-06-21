@@ -1,0 +1,96 @@
+h3 a{ 
+  color:  black;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+  color:  black;  
+  font-size: 67px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.col-lg-4{
+  max-width: 390px;
+}
+
+.col-lg-4 img{
+    max-width: 380px;    
+}
+
+
+.pointer{
+  cursor: pointer;
+}
+
+.navbar-nav .active{
+  border-bottom: 3px solid orange;
+}
+
+.navbar-default .navbar-nav>li>a{
+  transition: all 300ms;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+  transition: all 300ms;
+  border-bottom: 3px solid rgb(235, 197, 6);
+}
+
+.image_for_edit img{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar{
+  width: 55px;
+  height: 55px;
+  border-radius: 30px;
+  overflow: hidden;        
+  border-style: solid;
+  border-color: blue;
+  box-shadow: 2px 2px 2px rgb(34, 33, 33);  
+  margin: 13%;  
+  position: relative;
+  bottom: -13px;
+}
+
+.avatar0{
+  background-color: rgb(0, 0, 0);    
+}
+
+.avatar img{
+  height: 55px;  
+}
+
+.carro-image-mask{
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.boton_transiciones{
+  padding: 10px;
+  background: red;
+  color: white;
+  border-radius: 20px;
+  border: 4px solid blue;
+  transition: border 2s, border-radius 500ms, background 22s;
+  display: block;
+  width: 100px;
+}
+
+.caract h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 17px;  
+}
+
+.caract p{
+  color: rgb(0, 0, 0);  
+  text-align: justify;
+}

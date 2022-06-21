@@ -1,0 +1,73 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">  
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <br>
+      <h1>{{title}}</h1>
+      <br>
+    </div>
+
+    <div class="alert alert-success" *ngIf="status == 'success' ">
+        Has Actualizado Tu Informacion Correctamente
+    </div>
+    
+    <div class="alert alert-danger" *ngIf="status == 'error' ">
+        No Has Actualizado Tus Datos
+    </div>
+
+    <!-- Login Form -->
+<form #userEditarForm="ngForm" (ngSubmit)="onSubmit()" class="col-lg-0" >
+
+      <input type="name" id="login" class="fadeIn second" name="name" 
+      placeholder="Nombres Completos" #name="ngModel" [(ngModel)]="user.name" required>
+      <span *ngIf="!name.valid && name.touched">
+          El Nombre Es Obligatorio
+      </span> 
+
+      <input type="surname" id="login" class="fadeIn second" name="surname" 
+      placeholder="Apellidos Completos" #surname="ngModel" [(ngModel)]="user.surname" required>
+      <span *ngIf="!surname.valid && surname.touched">
+          El Apellido Es Obligatorio
+      </span> 
+
+      <input type="email" id="login" class="fadeIn second" name="email" 
+      placeholder="Correo Electronico" #email="ngModel" [(ngModel)]="user.email" required>
+        <span *ngIf="!email.valid && email.touched">
+            El Email No Es Correcto
+      </span> 
+
+      
+      <div class="image_for_edit" *ngIf="user.image && user.image != 'null'">    
+        <label>Sube Tu Avatar</label><br>
+        <img src="{{ url + 'get-image-file/' + user.image }}" />
+      </div>
+
+      <br>
+
+      <div>        
+        <input type="file" placeholder="Subir Imagen" (change)="fileChangeEvent($event)" />
+      </div>
+
+      <br>
+
+      <button type="submit" class="btn btn-outline-primary" 
+      [disabled]="!userEditarForm.form.valid">
+          Actualizar
+      </button>
+      <br>
+
+
+</form>    
+<br>
+  </div>
+</div>
+

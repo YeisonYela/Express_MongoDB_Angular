@@ -1,0 +1,30 @@
+<!-- Page Content -->
+<div class="container" [@fundido]>
+    <!-- Gallery -->
+<br><h2>ESPECIFICACIONES TÉCNICAS</h2><br>
+<div class="row">    
+ <div class="col-lg-99 col-md-12 mb-4 mb-lg-0" *ngIf="carro">
+   <img class="img-fluid img-thumbnail" src="{{url + 'get-image-carro/' +carro.image}}"
+         alt="">         
+
+ </div>
+</div>
+<!-- Gallery -->
+</div>
+<div class="container">
+<ul class="caract">
+    <h1>{{carro.name}}</h1>
+    <br>        
+     <!--<p>{{carro.user.surname}}</p>-->                
+    <p>{{'MODELO: '+carro.year}}</p>
+    <p>{{'CARACTERISTICAS: ' +carro.description}}</p>
+</ul>
+</div>
+
+
+<style>
+    .col-lg-99{
+        max-width: 45%;        
+        margin-left: 27.5%;
+    }
+</style>

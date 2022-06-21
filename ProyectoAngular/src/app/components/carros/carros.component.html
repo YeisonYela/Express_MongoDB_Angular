@@ -1,0 +1,17 @@
+<!-- Page Content -->
+<div class="container" [@fundido]>
+     <!-- Gallery -->
+<br><h2>Listado De Automoviles</h2><br>
+<div class="row">    
+  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" *ngFor="let carro of carros">
+    <img class="img-fluid img-thumbnail" src="{{ url +'get-image-carro/' +carro.image }}"
+          alt="{{carro.name}}" *ngIf="carro.image">
+
+          <img  src="http://via.placeholder.com/270x200" alt="{{carro.name}}"
+            *ngIf="!carro.image"> 
+
+            <h3><a [routerLink]="['/carro', carro._id]">{{carro.name}}</a></h3>    
+  </div>
+</div>
+<!-- Gallery -->
+</div>
